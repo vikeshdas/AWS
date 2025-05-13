@@ -54,15 +54,19 @@ It is global service when we create an IAM user or group you will notice that th
  <img src="images/13.png" width="80%" align="top-left" alt="" title="CNN" />
 
 * Click on user to which you want to assign permission
-  <img src="images/14.png" width="80%" align="top-left" alt="" title="CNN" />
+
+<img src="images/14.png" width="80%" align="top-left" alt="" title="CNN" />
 
 * Click on add permission
-  <img src="images/15.png" width="80%" align="top-left" alt="" title="CNN" />
+
+<img src="images/15.png" width="80%" align="top-left" alt="" title="CNN" />
 
 * Click on attached policy
+
   <img src="images/16.png" width="80%" align="top-left" alt="" title="CNN" />
 
   * And attached policies :in my case I am attaching IamReadOnlyAccess Permission.so this user can not create IAM role or group user can only read.
+  
       <img src="images/17.png" width="80%" align="top-left" alt="" title="CNN" />
 
 ## How can we access AWS
