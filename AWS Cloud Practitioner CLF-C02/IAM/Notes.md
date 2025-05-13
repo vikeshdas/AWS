@@ -3,42 +3,42 @@
 # IAM service
 * It is used to control the access to AWS resources.We can manage permission which controls which resource can use a user.
 * A user or group of users can be assigned json documents called policy.
-<img src="images/1.png" width="100%" align="top-left" alt="" title="CNN" />
+<img src="images/1.png" width="80%" align="top-left" alt="" title="CNN" />
 * Above policies define permissions for a user of a group.
 * In AWS we provide the least privilege principle; it means don’t give more permission to a user then needs.
 
 ## Create a IAM User 
 It is global service when we create an IAM user or group you will notice that there is no region selected unlike other service
-<img src="images/2.png" width="100%" align="top-left" alt="" title="CNN" />
+<img src="images/2.png" width="80%" align="top-left" alt="" title="CNN" />
 
 #### Go to console  Then search for IAM service
-<img src="images/3.png" width="100%" align="top-left" alt="" title="CNN" />
+<img src="images/3.png" width="80%" align="top-left" alt="" title="CNN" />
 
 #### Go to "Access management"->"Users"
-<img src="images/4.png" width="100%" align="top-left" alt="" title="CNN" />
+<img src="images/4.png" width="80%" align="top-left" alt="" title="CNN" />
 
 #### Click on create user
-<img src="images/5.png" width="100%" align="top-left" alt="" title="CNN" />
+<img src="images/5.png" width="80%" align="top-left" alt="" title="CNN" />
 
 #### Fill user information and password etc.
-<img src="images/6.png" width="100%" align="top-left" alt="" title="CNN" />
-<img src="images/7.png" width="100%" align="top-left" alt="" title="CNN" />
+<img src="images/6.png" width="80%" align="top-left" alt="" title="CNN" />
+<img src="images/7.png" width="80%" align="top-left" alt="" title="CNN" />
 
 #### Set permission 
-<img src="images/8.png" width="100%" align="top-left" alt="" title="CNN" />
+<img src="images/8.png" width="80%" align="top-left" alt="" title="CNN" />
 
 #### Create a group
 
-<img src="images/9.png" width="100%" align="top-left" alt="" title="CNN" />
+<img src="images/9.png" width="80%" align="top-left" alt="" title="CNN" />
 
 #### Enter name of group and select policies 
-<img src="images/10.png" width="100%" align="top-left" alt="" title="CNN" />
+<img src="images/10.png" width="80%" align="top-left" alt="" title="CNN" />
 
 #### Now add that user to above created group
-<img src="images/11.png" width="100%" align="top-left" alt="" title="CNN" />
+<img src="images/11.png" width="80%" align="top-left" alt="" title="CNN" />
 
 ## IAM policies structure
-<img src="images/12.png" width="100%" align="top-left" alt="" title="CNN" />
+<img src="images/12.png" width="80%" align="top-left" alt="" title="CNN" />
 
 * IAM polices start with version number
 * Id : identifier for a policy
@@ -51,19 +51,19 @@ It is global service when we create an IAM user or group you will notice that th
 
 ## Assign permission to a user
 * Go to IAM->User
- <img src="images/13.png" width="100%" align="top-left" alt="" title="CNN" />
+ <img src="images/13.png" width="80%" align="top-left" alt="" title="CNN" />
 
 * Click on user to which you want to assign permission
-  <img src="images/14.png" width="100%" align="top-left" alt="" title="CNN" />
+  <img src="images/14.png" width="80%" align="top-left" alt="" title="CNN" />
 
 * Click on add permission
-  <img src="images/15.png" width="100%" align="top-left" alt="" title="CNN" />
+  <img src="images/15.png" width="80%" align="top-left" alt="" title="CNN" />
 
 * Click on attached policy
-  <img src="images/16.png" width="100%" align="top-left" alt="" title="CNN" />
+  <img src="images/16.png" width="80%" align="top-left" alt="" title="CNN" />
 
   * And attached policies :in my case I am attaching IamReadOnlyAccess Permission.so this user can not create IAM role or group user can only read.
-      <img src="images/17.png" width="100%" align="top-left" alt="" title="CNN" />
+      <img src="images/17.png" width="80%" align="top-left" alt="" title="CNN" />
 
 ## How can we access AWS
 ### we have three options 
@@ -76,17 +76,17 @@ It is global service when we create an IAM user or group you will notice that th
 
 ### How to create access key
 * Go to IAM -> Users: and click on currect logedin user
-    <img src="images/secrete_key1.png" width="100%" align="top-left" alt="" title="CNN" />
+    <img src="images/secrete_key1.png" width="80%" align="top-left" alt="" title="CNN" />
 * Click on security credentials
-     <img src="images/secrete_key2.png" width="100%" align="top-left" alt="" title="CNN" />
+     <img src="images/secrete_key2.png" width="80%" align="top-left" alt="" title="CNN" />
 * Scroll down and click on Create Access Key
-         <img src="images/secrete_key3.png" width="100%" align="top-left" alt="" title="CNN" />
+         <img src="images/secrete_key3.png" width="80%" align="top-left" alt="" title="CNN" />
 * select use case
-         <img src="images/secrete_key4.png" width="100%" align="top-left" alt="" title="CNN" />
+         <img src="images/secrete_key4.png" width="80%" align="top-left" alt="" title="CNN" />
 * click on create secrete key
-         <img src="images/secrete_key5.png" width="100%" align="top-left" alt="" title="CNN" />
+         <img src="images/secrete_key5.png" width="80%" align="top-left" alt="" title="CNN" />
 * Download csf file which contains secrete keys
-         <img src="images/secrete_key6.png" width="100%" align="top-left" alt="" title="CNN" />
+         <img src="images/secrete_key6.png" width="80%" align="top-left" alt="" title="CNN" />
 
 
 ## AWS CLI
@@ -101,7 +101,7 @@ https://awscli.amazonaws.com/AWSCLIV2.msi
     ```
     aws --version
     ``` 
-    <img src="images/cli1.png" width="100%" align="top-left" alt="" title="CNN" />
+    <img src="images/cli1.png" width="80%" align="top-left" alt="" title="CNN" />
 * if you find above result in cli it means every thing is fine till here.
 
 #### Configure local command prompt to connect with aws 
@@ -111,7 +111,7 @@ https://awscli.amazonaws.com/AWSCLIV2.msi
     aws configure
     ```
 * Above command will ask for Access key ID , Secrete access key and region. chose region which is closer to you 
-    <img src="images/cli_configure.png" width="100%" align="top-left" alt="" title="CNN" />
+    <img src="images/cli_configure.png" width="80%" align="top-left" alt="" title="CNN" />
 
 
 
@@ -125,20 +125,20 @@ Since we are saying it is identity it must have user_id and password jsut like a
 
 ### Create Role
 * Go to IAM -> User
-    <img src="images/role1.png" width="100%" align="top-left" alt="" title="CNN" />
+    <img src="images/role1.png" width="80%" align="top-left" alt="" title="CNN" />
 * Create role
-    <img src="images/role2.png" width="100%" align="top-left" alt="" title="CNN" />
+    <img src="images/role2.png" width="80%" align="top-left" alt="" title="CNN" />
 * Select service on which this role you are going to apply
-    <img src="images/role3.png" width="100%" align="top-left" alt="" title="CNN" />
+    <img src="images/role3.png" width="80%" align="top-left" alt="" title="CNN" />
 * Attach plicies to that role 
-    <img src="images/role4.png" width="100%" align="top-left" alt="" title="CNN" />
+    <img src="images/role4.png" width="80%" align="top-left" alt="" title="CNN" />
 * Give Role Name and click on create role
-    <img src="images/role5.png" width="100%" align="top-left" alt="" title="CNN" />
+    <img src="images/role5.png" width="80%" align="top-left" alt="" title="CNN" />
 
 * After creating role you can see role information it has ARN also this is identity of role.
-    <img src="images/role6.png" width="100%" align="top-left" alt="" title="CNN" />
+    <img src="images/role6.png" width="80%" align="top-left" alt="" title="CNN" />
 *You can see permision assigned to role
-    <img src="images/role6.png" width="100%" align="top-left" alt="" title="CNN" />
+    <img src="images/role6.png" width="80%" align="top-left" alt="" title="CNN" />
 
 
 ## AWS BUCKET
