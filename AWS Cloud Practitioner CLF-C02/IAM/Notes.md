@@ -7,6 +7,17 @@
 * Above policies define permissions for a user of a group.
 * In AWS we provide the least privilege principle; it means don’t give more permission to a user then needs.
 
+## what is policies
+Policies is cobinatino of many permision.form example AdministrativeAccess policy is set of below permisions.
+<img src="images/18.png" width="80%" align="top-left" alt="" title="CNN" />
+```
+"Action": * (allow all action)
+"Resource": * (on all resource)
+```
+#### Below are permission of IAMReadOnlyAccess Policy
+
+<img src="images/19.png" width="80%" align="top-left" alt="" title="CNN" />
+
 ## Create a IAM User 
 It is global service when we create an IAM user or group you will notice that there is no region selected unlike other service
 <img src="images/2.png" width="80%" align="top-left" alt="" title="CNN" />
@@ -66,8 +77,23 @@ It is global service when we create an IAM user or group you will notice that th
   <img src="images/16.png" width="80%" align="top-left" alt="" title="CNN" />
 
   * And attached policies :in my case I am attaching IamReadOnlyAccess Permission.so this user can not create IAM role or group user can only read.
-  
+
       <img src="images/17.png" width="80%" align="top-left" alt="" title="CNN" />
+
+## Create own policy
+#### Go to IAM -> policies -> create policies
+<img src="images/20.png" width="80%" align="top-left" alt="" title="CNN" />
+
+#### Go To visual editor 
+<img src="images/21.png" width="80%" align="top-left" alt="" title="CNN" />
+
+#### Search IAM because we are going to Create plicies for IAM
+<img src="images/22.png" width="80%" align="top-left" alt="" title="CNN" />
+
+#### Filter action
+
+#### Give Name to the policy
+<img src="images/23.png" width="80%" align="top-left" alt="" title="CNN" />
 
 ## How can we access AWS
 ### we have three options 
@@ -76,7 +102,7 @@ It is global service when we create an IAM user or group you will notice that th
 * SDK: Software development kit
 
 ## Access key
-### It is a secreate same as user password.It is generated throut aws console. It contains Access Key ID just like username and Secrete Access Key just like passwrod.
+### It is a secreate same as user password.It is generated throut aws console. It contains Access Key ID just like username and Secrete Access Key just like passwrod.Access key is used to interact with AWS services using CLI.
 
 ### How to create access key
 * Go to IAM -> Users: and click on currect logedin user
@@ -94,7 +120,7 @@ It is global service when we create an IAM user or group you will notice that th
 
 
 ## AWS CLI
-### A tool that enable you to intract with AWS services using commands in you command line cell
+### A tool that enable you to intract with AWS services from local machine using commands in you command line cell
 
 ####  Install CLI on windows
 * Click on this link and it will download automatically and then install by clicking install and next next
@@ -118,7 +144,45 @@ https://awscli.amazonaws.com/AWSCLIV2.msi
     <img src="images/cli_configure.png" width="80%" align="top-left" alt="" title="CNN" />
 
 
+## Roles for Aws Services
+A service need to perform some operation on other service in aws and for that service need to have permision to perform operation just like permision to user to perform operation.
 
+example: EC2 instance roles: Grant EC2 instances permissions to access services (like S3, DynamoDB)
+
+### Create role for EC2
+* Got IAM -> Rol ->Create role
+    <img src="images/24.png" width="80%" align="top-left" alt="" title="CNN" />
+* select aws service : becuase we are creating role for serevice.
+    <img src="images/25.png" width="80%" align="top-left" alt="" title="CNN" />
+* in above image from in service and user dropdown select serivice for which role you are going to create.in ower case select EC2
+    <img src="images/26.png" width="80%" align="top-left" alt="" title="CNN" />
+* chose use case EC2 on same above page 
+* click on next
+
+* attache policies with role.
+    <img src="images/27.png" width="80%" align="top-left" alt="" title="CNN" />
+* Give role name
+    <img src="images/28.png" width="80%" align="top-left" alt="" title="CNN" />
+
+## EC2
+Elastic compute cloud ,it is a infrastructure as a service.it is on-demand virtual machine.
+
+### what can we chose while creating EC2
+* we can chose operating system.
+* How much computer power & core (CPU) 
+* chose How much RAM
+* chose storage space
+    ```
+    chose any one:
+    - do you want storage that is going to be attached through the network(EBS & EFS)
+    - Hardware 
+    ```
+* Network Card
+* Firewall rulse: Security group
+* Bootstrap script
+    ```
+    Well, bootstrapping means launching commands when the machine starts.So, that script is only run once and when it first starts,and then will never be run again.
+    ```
 ## AWS SDK
 ### It AWS software development kit. It is set of libraries or language specific APIs for different programing languages. It allow you to access and mange aws services programatically
 
