@@ -29,8 +29,22 @@ Elastic compute cloud ,it is a infrastructure as a service.it is on-demand virtu
     when EC2 instance starts the EC2 service detects the user data script.The operating system runs the script once at boot time.
     ```
 
+## create EC2
+* Go to Console Home and select EC2.
+    <img src="images/1.png" width="80%" align="top-left" alt="" title="CNN" />
 
-### Create role for EC2
+* Got instaces->instance and then click on Launch instances
+
+    <img src="images/2.png" width="80%" align="top-left" alt="" title="CNN" />
+
+* Give name and tage to ec2
+
+    <img src="images/3.png" width="80%" align="top-left" alt="" title="CNN" />
+
+* Chose base image for your ec2 instance
+
+    <img src="images/4.png" width="80%" align="top-left" alt="" title="CNN" />
+## Create role for EC2
 * Got IAM -> Rol ->Create role
     <img src="images/24.png" width="80%" align="top-left" alt="" title="CNN" />
 * select aws service : becuase we are creating role for serevice.
