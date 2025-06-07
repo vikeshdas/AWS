@@ -1,25 +1,29 @@
 # AWS
 # Root user
-    The AWS account root user is an AWS account principal that is created when your AWS account is established. The root user has access to all AWS services and resources in the account
+The AWS account root user is an AWS account principal that is created when your AWS account is established. The root user has access to all AWS services and resources in the account
 
+# IAM user
+
+By default, a new IAM user has no permissions to do anything.n IAM user is a resource in IAM that has associated credentials and permissions. An IAM user can represent a person or an application that uses its credentials to make AWS requests. This is typically referred to as a service account.
 
 # Access key
-    Access keys: Used to make programmatic calls to AWS. However, there are more secure alternatives to consider before you create access keys for IAM users.If the IAM user has active access keys, they continue to function and allow access through the AWS CLI, AWS API, or the AWS Console Mobile Application.
+Access keys: Used to make programmatic calls to AWS. However, there are more secure alternatives to consider before you create access keys for IAM users.If the IAM user has active access keys, they continue to function and allow access through the AWS CLI, AWS API, or the AWS Console Mobile Application.
+
 # IAM service
-    AWS Identity and Access Management is a powerful tool for securely managing access to your AWS resources. One of the primary benefits of using IAM is the ability to grant shared access to your AWS account. Additionally, IAM allows you to assign granular permissions . This level of access control is crucial for maintaining the security of your AWS environment. IAM also provides several other security features. You can add multi-factor authentication (MFA) for an extra layer of protection, and user identity federation . IAM also integrates with AWS CloudTrail. By taking advantage of these capabilities, you can help ensure that access to your critical AWS resources is tightly controlled and secure
+AWS Identity and Access Management is a powerful tool for securely managing access to your AWS resources. One of the primary benefits of using IAM is the ability to grant shared access to your AWS account. Additionally, IAM allows you to assign granular permissions . This level of access control is crucial for maintaining the security of your AWS environment. IAM also provides several other security features. You can add multi-factor authentication (MFA) for an extra layer of protection, and user identity federation . IAM also integrates with AWS CloudTrail. By taking advantage of these capabilities, you can help ensure that access to your critical AWS resources is tightly controlled and secure
 
 ## shared access to your AWS account 
 
-    It means letting other people or systems use parts of your AWS account, but in a controlled and secure way — without giving them full access.like root user create IAM user and give only few permission to perform action.SO heere root user and IAM user are sharing account
+It means letting other people or systems use parts of your AWS account, but in a controlled and secure way — without giving them full access.like root user create IAM user and give only few permission to perform action.SO heere root user and IAM user are sharing account
 
 ## Multi Factor Atuthentication
-    You can add two-factor authentication to your account and to individual users for extra security. With MFA you or your users must provide not only a password or access key to work with your account, but also a code from a specially configured devic
+You can add two-factor authentication to your account and to individual users for extra security. With MFA you or your users must provide not only a password or access key to work with your account, but also a code from a specially configured devic
 
 ## Granular permissions
-    Granular permissions means granting very specific, fine-tuned access to AWS resources rather than giving broad or unrestricted privileges. Instead of allowing a user to perform all actions (like AdministratorAccess), you define exactly what they can and cannot do.
+Granular permissions means granting very specific, fine-tuned access to AWS resources rather than giving broad or unrestricted privileges. Instead of allowing a user to perform all actions (like AdministratorAccess), you define exactly what they can and cannot do.
 
 ## AWS CloudTrail
-    AWS CloudTrail is a service in Amazon Web Services (AWS) that records and monitors activity in your AWS account. It gives you visibility into what actions were taken, by whom, and when.AWS CloudTrail is a service in Amazon Web Services (AWS) that records and monitors activity in your AWS account. It gives you visibility into what actions were taken, by whom, and when.
+AWS CloudTrail is a service in Amazon Web Services (AWS) that records and monitors activity in your AWS account. It gives you visibility into what actions were taken, by whom, and when.AWS CloudTrail is a service in Amazon Web Services (AWS) that records and monitors activity in your AWS account. It gives you visibility into what actions were taken, by whom, and when.
 
 CloudTrail logs every API call and event made in your AWS account, including:
 1. Who made the request (user, role, service)
@@ -60,7 +64,7 @@ Policies is cobinatino of many permision.form example AdministrativeAccess polic
 
 ## AWS IAM Identity Center
 
-    IAM identities include IAM users, IAM groups, and IAM roles. An IAM entity is a type of identity that represents a human user or programmatic workload that can be authenticated and then authorized to perform actions in AWS accounts
+IAM identities include IAM users, IAM groups, and IAM roles. An IAM entity is a type of identity that represents a human user or programmatic workload that can be authenticated and then authorized to perform actions in AWS accounts
 
 ###  Imagine your company has 5 AWS accounts.You don’t want to manually create users and permissions in each account.
 
