@@ -1,0 +1,8 @@
+- create an instance 
+- attache EBS
+- take screensort
+- create AMI
+- create isntance from AMI
+- create AMI from a snapshot of the root device of an Amazon EC2 instance
+- change instance type of amazone EC2 instance 
+- create burstable instance(and configure unlimited mode and standered mode)
